@@ -13,7 +13,7 @@ function App() {
     {
         e.preventDefault(); 
         Location.trim()
-        const res = await axios.get(`http://universities.hipolabs.com/search?country=${Location}`);
+        const res = await axios.get(`https://cors-anywhere.herokuapp.com/http://universities.hipolabs.com/search?country=${Location}`);
       SetUniversities(res.data);
         console.log(res.data)
           setLocation("")
